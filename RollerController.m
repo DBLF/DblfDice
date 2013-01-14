@@ -25,8 +25,8 @@
 	Roller *roller = [[Roller alloc] initWithValue:[valueField intValue]];
 	[roller roll];
 	
-	[resultField setTitleWithMnemonic:[NSString stringWithFormat:@"%d", [roller result]]];
-	[rollField setTitleWithMnemonic:[NSString stringWithFormat:@"roll: %d", [roller randomNumber]]];
+	[resultField setStringValue:[NSString stringWithFormat:@"%d", [roller result]]];
+	[rollField setStringValue:[NSString stringWithFormat:@"roll: %d", [roller randomNumber]]];
 	
 	if ([roller randomNumber] == 100) {
 		[resultField setTextColor:(NSColor *) [NSColor redColor]];
