@@ -28,7 +28,7 @@
 }
 
 - (int) roll {
-	randomNumber = (arc4random() % 100) + 1;
+    randomNumber = arc4random_uniform(100) + 1;
 	
 	if (randomNumber == 100) {
 		result = 0;
